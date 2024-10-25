@@ -1,0 +1,28 @@
+#cuerpo{
+    background-color: purple; margin-left: 15px;
+}
+#titulo-principal{
+    background-color: aqua;
+    color: black;
+    border: 8px soild blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    text-align: right;
+    padding: 69px
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: azure;
+    border: 9px solid;
+    font-size: 15px;
+}
+.p-principal{
+    font-size: 1em;
+    background-color: brown;
+    padding: 80px;
+}
+.p2-secundario{
+    background-color: coral;
+    font-size: 2em;
+    font-family: fantasy;
+}
