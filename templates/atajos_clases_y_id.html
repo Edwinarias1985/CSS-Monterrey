@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atajos, clases y ID's</title>
+        <link rel="stylesheet" href="../style/atajos_clases-y-id.css">
+    </head>
+    <body>
+    <!--Para los atajos en el elemento de ID solo pude ser 1 solo, caso contrario a el elemento Class que si permite multiples clases al elemento anteponiendo el (punto). iniciando cada nombre con el . ejemplo:-->
+        <h1 style="color: brown;">Tema 4: atajos de clases e IDs.</h1>
+            <ul>
+                <li>En VS Code nos facilita agragar clases e IDs a elementos nuevos, para esto podemos escribir el nombre del tipo de elemento seguido de un "." o un "#" y seguio el nombre de la clase.</li>
+                <p style="text-align: center; border: 2px solid; background-color: black; color: aqua; font-family: 'Times New Roman', Times, serif; max-width: fit-content;">p.ejmeplo.segundo-ejemplo</p>
+                <li>Podemos agregar múltiples clases al elemento iniciando cada nombre por un ".".</li>
+                <p style="text-align: right; border: 2px solid; background-color: blue; color: burlywood">jlajsdlfajlsdfjl</p>
+            </ul>
+            <p style="border: 2px solid; text-align: center blue;">A diferencia de las clases, no pordemos agragar más de un ID a un elemento</p>
+        <hr>
+        <ul>
+            <li>Usando Clases</li>
+            <p class="p-atajos">h1.primer-titulo.otra-clase</p>
+        </ul>    
+        <ul>
+            <li>Usando ID's</li>
+            <p class="p-atajos">h1#unico#diferente</p><!--Solo toma un ID por lo cual va a quedar "diferente" y el "único" pueda que esté pero no lo toma-->
+        </ul>
+        <ul>
+            <li>Usando SUB etiquetas</li>
+            <p class="p-atajos">div>h2+p+ul>li*3</p>
+        </ul>
+        <ul>
+            <li>Usando el atajo para hacer el div</li>
+            <p class="p-atajos">.clase>h1+p</p><!--En este ejemplo solo inserté una clase, pero se puede hacer con más clases-->
+        </ul>
+        <ul>
+            <li>Usando corchetes planos para ATRIBUTOS</li>
+            <p class="p-atajos">h1.clase.clase-dos[style="background-color: purple;"title="Soy un h1"]</p>
+        </ul>
+        <ul>
+            <li>Usando llaves para contenido de la etiqueta</li>
+            <p class="p-atajos">h1.clase.clase-dos[style="color: yellow;"title="Soy un h1"]{Hello honey}</p>
+        </ul>
+        <div class="nombre"> <!--.nombre>p{Lo que va dentro del P}+h2+ul>li+p[style="color: blue; border: 3px solid;" title="Hola"]{Ejemplo 1}-->
+            <p>Lo que va dentro del P</p>
+            <h2></h2>
+            <ul>
+                <li></li>
+                <p style="color: blue; border: 3px solid;" title="Hola">Ejemplo 1</p>
+            </ul>
+        </div>
+        <div id="nombre"><!--.nombre>p{Lo que va dentro del P}+h2+ul>li+p[style="color: blue; border: 3px solid;" title="Hola"]{Ejemplo 1}-->
+            <p>Lo que va dentro del P</p>
+            <h2></h2>
+            <ul>
+                <li></li>
+                <p style="color: blue; border: 3px solid;" title="Hola">Ejemplo 1</p>
+            </ul>
+        </div>
+    </body>
+</html>

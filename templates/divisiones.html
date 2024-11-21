@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisiones en CSS</title>
+    <link rel="stylesheet" href="../style/divisiones.css">
+</head>
+<body>
+    <div class="inicio-del-tema">
+        <h1> Tema 5 Divisiones en CSS (Cascadig style sheets)</h1>
+        <p>Recordemos que en el módulo anterior se aprendió sobre un elemento <Strong>HTML</Strong> cuya función es permitir la modificación de pequeñas partes del documento, como ejemplo se le puede poner a una palabra, letra(s), párrafo el color que queramos par que resalte. Las <strong>Divisiones</strong> son elementos que con funciones similares a un <strong>span</strong>pero la diferencia es que las <strong>Divisiones</strong> se usan para agrupar bloques enteros en lugar de frases o palabras. Para poder hacer uso de estas <strong>Divisiones</strong> se debe de emplear la etiqueta <strong>div</strong>, normalmente están acompañadas de una <strong>calse o ID</strong> para poder modificar el contenido dentro sin afectar otros elementos que estén alrededor.</p>
+        <h2>Ejemplo de uso</h2>
+        <p>Para poder separar secciones de contenido usando <strong>Divisiones</strong>. Ejemplo:</p>
+        <div class="primer-contenedor">
+            <h3>Este es el contenedor del encabezado.</h3>
+        </div>
+        <div class="segundo-contenedor">
+            <p>Este es el contenedor del texto.</p>
+        </div>
+            <h2>También se pueden usar <strong>divisiones dentro de divisones</strong></h2>
+        <div class="contenedor-1">
+            <h4>Este es el contenedor del encabezado</h4>
+        <div class="contenedor-2">
+            <p>Este es el contenedor del texto.</p>
+        </div>
+        <h2>Herencia en CSS (Cascading Style Sheets)</h2>
+        <p>Se puende observar que el color del txto en el segundo contenedor cambia: en la primer ejemplo es negro y el segundo blanco. Esto se da porque en el segundo ejemplo la segúnda división está dentro de la primera. Locual causa que se <strong>hereden</strong> las propiedades de la primera división a la segúnda. El CSS de la primera división contiene color: white; y es esta propiedad la que se hereda a la segunda división, cambiando el color del texto. La otra propiedad que se hereda es text-align: center;, la cual centra al texto en su contenedor. <br>A esto se le denomina <strong>herencia, la cual consiste en aquellas propiedades que se pasan de un elemnto padre o superior a otro elemnto hijo. El color negro que se asigna por defecto al texto del documento; al modificar el contenedor con un nuevo color, este se aplica a todos los elementos <span style="border: 3px solid; font-size: medium; background-color: aqua;">dentro</span> de ese contenedor. Si agregamos la propiedad color al segundo contenedor, entonces se sobreescribe la propiedad heredada de la primer división. Es por esto que el tipo de letra del primer contenedor no se aplica al segundo, ya que tenemos otra propiedad font-family siendo modificada.</strong></p>
+    </div>
+</body><!--HTML es un lenguaje demarcado o de hypertexto que sirve para estructurar una página o sítio WEB. java es el sistema nervioso, CSS es la piel y HTML es el esquelto.-->
+</html>
